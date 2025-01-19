@@ -1,0 +1,141 @@
+/* General Styling */
+body {
+    background: url('a.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Georgia', serif;
+    color: #fff;
+    text-align: center;
+    background-color: #3e1a1a;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #141010;
+    padding: 20px 0;
+  }
+  
+  h1 {
+    color: #928e79;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .intro-text {
+    font-size: 1.2rem;
+    color: #f5f5f5;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  .btn {
+    background-color: #565150;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    background-color: #373635;
+    transform: scale(1.1);
+  }
+  
+  /* Hidden Sections */
+  .hidden {
+    display: none;
+  }
+  
+  /* Question Dialog */
+  .question-dialog {
+    background: linear-gradient(to bottom right, #330000, #660000);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  .book-cover {
+    background-color: #5a5248;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #1a1616;
+  }
+  
+  .book-cover h2 {
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    color: #660000;
+  }
+  
+  .options-container button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #660000;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s;
+    width: 90%;
+  }
+  
+  .options-container button:hover {
+    background-color: #a83232;
+    transform: scale(1.1);
+  }
+  
+  /* Correct Answer Dialog */
+  .congrats-dialog {
+    background: linear-gradient(to bottom, #660000, #330000);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .congrats-dialog img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .final-dialog {
+    background: linear-gradient(to bottom, #330000, #660000);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    margin: 20px auto;
+    color: #ffd700;
+  }
+  
+  .final-dialog h2 {
+    font-size: 1.8rem;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .intro-text {
+      font-size: 1rem;
+    }
+  
+    .btn {
+      font-size: 1rem;
+    }
+  
+    .options-container button {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+
+  <main id="home">
+    <section id="intro">
+      <p class="intro-text">Welcome to the Birthday Quiz! Show me how well you perform! 😘</p>
+      <button onclick="startQuiz()" class="btn">Start the Quiz</button>
+    </section>
+  </main>
+
+  <section id="quiz-section" class="hidden">
+    <div class="quiz-container">
+      <div class="image-container">
+        <img id="question-image" src="assets/question-placeholder.jpg" alt="Question Image" />
+      </div>
+      <div class="question-container">
+        <h2 id="question-text">Question Text</h2>
+        <div id="options" class="options-list"></div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="correct-answer-section" class="hidden">
+    <div class="congrats-dialog">
+      <h2 id="correct-message">Correct Answer!</h2>
+      <img id="congrats-image" src="f.png" alt="Congrats Image" />
+      <p id="correct-text">You're doing amazing, my love! ❤️</p>
+      <button onclick="nextQuestion()" class="btn">I Love It!</button>
+    </div>
+  </section>
+
+  <section id="result-section" class="hidden">
+    <div class="result-dialog">
+      <h2 id="result-message"></h2>
+     <img id="result-image" src="e.png" alt="Wrong Answer" />
+      <p id="result-text">"SAY SORRY TO HER"</p>
+      <button onclick="retry()" class="btn">Try Again</button>
+    </div>
+  </section>
+
+  <section id="final-section" class="hidden">
+    <div class="final-dialog">
+      <h2 class="animate__animated animate__heartBeat">Happy Birthday to My Everything!</h2>
+      <p>Love you to the moon and back! 🌙❤️</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
